@@ -6,15 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
+<AnchorPane prefHeight="728.0" prefWidth="1043.0" style="-fx-border-color: gray; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
    <children>
-      <AnchorPane fx:id="mainScreen" prefHeight="707.0" prefWidth="1050.0">
-         <children>
             <Label layoutX="317.0" layoutY="14.0" text="Inventory Management System">
                <font>
                   <Font name="Helvetica" size="30.0" />
@@ -28,10 +23,10 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="searchPartField" layoutX="251.0" layoutY="14.0" promptText="Search Parts" style="-fx-border-color: gray;" />
+                  <TextField fx:id="searchPartField" layoutX="251.0" layoutY="14.0" prefHeight="29.0" prefWidth="237.0" promptText="Search Parts" style="-fx-border-color: gray;" />
                   <Button fx:id="addPartButton" layoutX="28.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#addPart" style="-fx-background-color: #808080;" text="Add" />
-                  <Button fx:id="modifyPartButton" layoutX="345.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#modifyPart" style="-fx-background-color: gray;" text="Modify" />
-                  <Button fx:id="deletePartButton" layoutX="421.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#deletePart" style="-fx-background-color: gray;" text="Delete" />
+                  <Button fx:id="modifyPartButton" layoutX="370.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#modifyPart" style="-fx-background-color: gray;" text="Modify" />
+                  <Button fx:id="deletePartButton" layoutX="433.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#deletePart" style="-fx-background-color: gray;" text="Delete" />
                   <TableView layoutX="13.0" layoutY="64.0" prefHeight="413.0" prefWidth="475.0">
                      <columns>
                         <TableColumn prefWidth="75.0" text="Part ID" />
@@ -40,7 +35,6 @@
                         <TableColumn prefWidth="142.0" text="Price/Cost per Unit" />
                      </columns>
                   </TableView>
-                  <Button fx:id="searchPartButton" layoutX="421.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#searchPart" style="-fx-background-color: gray;" text="Search" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="productTable" layoutX="535.0" layoutY="63.0" prefHeight="582.0" prefWidth="501.0" style="-fx-background-color: light gray; -fx-border-color: black; -fx-border-radius: 20px;">
@@ -50,10 +44,10 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="searchProductField" layoutX="251.0" layoutY="15.0" promptText="Search Product" style="-fx-border-color: gray;" />
+                  <TextField fx:id="searchProductField" layoutX="251.0" layoutY="15.0" prefHeight="29.0" prefWidth="237.0" promptText="Search Product" style="-fx-border-color: gray;" />
                   <Button fx:id="addProductButton" layoutX="30.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#addProduct" style="-fx-background-color: gray;" text="Add" />
-                  <Button fx:id="modifyProductButton" layoutX="317.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#modifyProduct" style="-fx-background-color: gray;" text="Modify" />
-                  <Button fx:id="deleteProductButton" layoutX="393.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#deleteProduct" style="-fx-background-color: gray;" text="Delete" />
+                  <Button fx:id="modifyProductButton" layoutX="370.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#modifyProduct" style="-fx-background-color: gray;" text="Modify" />
+                  <Button fx:id="deleteProductButton" layoutX="434.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#deleteProduct" style="-fx-background-color: gray;" text="Delete" />
                   <TableView layoutX="13.0" layoutY="64.0" prefHeight="413.0" prefWidth="475.0">
                      <columns>
                         <TableColumn prefWidth="75.0" text="Product ID" />
@@ -62,16 +56,7 @@
                         <TableColumn prefWidth="142.0" text="Price/Cost per Unit" />
                      </columns>
                   </TableView>
-                  <Button fx:id="searchProductButton" layoutX="419.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#searchProduct" style="-fx-background-color: gray;" text="Search" />
                </children>
             </AnchorPane>
-         </children>
-      </AnchorPane>
    </children>
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
-</GridPane>
+</AnchorPane>

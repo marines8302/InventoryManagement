@@ -4,8 +4,18 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class mainController {
+
+    @FXML
+    private AnchorPane mainScreen;
+
+    @FXML
+    private Button exitButton;
+
+    @FXML
+    private AnchorPane partsTable;
 
     @FXML
     private TextField searchPartField;
@@ -23,6 +33,9 @@ public class mainController {
     private Button searchPartButton;
 
     @FXML
+    private AnchorPane productTable;
+
+    @FXML
     private TextField searchProductField;
 
     @FXML
@@ -37,10 +50,10 @@ public class mainController {
     @FXML
     private Button searchProductButton;
 
-//    @FXML
-//    void addPart(MouseEvent event) {
-//
-//    }
+    @FXML
+    void addPart(MouseEvent event) {
+
+    }
 
     @FXML
     void addProduct(MouseEvent event) {
@@ -54,6 +67,11 @@ public class mainController {
 
     @FXML
     void deleteProduct(MouseEvent event) {
+
+    }
+
+    @FXML
+    void exitButton(MouseEvent event) {
 
     }
 
@@ -77,7 +95,4 @@ public class mainController {
 
     }
 
-    public void addPart(MouseEvent mouseEvent) {
-    }
 }
-

@@ -1,12 +1,13 @@
 package Controller_Views;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class mainController {
+public class MainController {
 
     @FXML
     private AnchorPane mainScreen;
@@ -94,5 +95,7 @@ public class mainController {
     void searchProduct(MouseEvent event) {
 
     }
-
+    @FXML
+    void exitApp(ActionEvent actionEvent) {
+    }
 }

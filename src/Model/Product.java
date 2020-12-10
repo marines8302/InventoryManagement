@@ -4,6 +4,11 @@ import java.util.ArrayList;
 /**
  * Class Product.java
  */
+
+/**
+ *
+ * @author John Molato
+ */
 public class Product {
     private ArrayList<Part> associatedParts = new ArrayList<>();
     private int id;

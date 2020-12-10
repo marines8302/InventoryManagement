@@ -1,4 +1,4 @@
-package Controller_Views;
+package View_Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,6 +7,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
+/**
+ *
+ * @author John Molato
+ */
 public class MainController {
 
     @FXML

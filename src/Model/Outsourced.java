@@ -1,5 +1,9 @@
 package Model;
 
+/**
+ *
+ * @author John Molato
+ */
 public class Outsourced extends Part {
     private String companyName;
 

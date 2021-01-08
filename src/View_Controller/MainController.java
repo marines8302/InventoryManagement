@@ -77,6 +77,7 @@ public class MainController {
 
     @FXML
     void exitButton(MouseEvent event) {
+        System.exit(0);
 
     }
 
@@ -99,7 +100,5 @@ public class MainController {
     void searchProduct(MouseEvent event) {
 
     }
-    @FXML
-    void exitApp(ActionEvent actionEvent) {
-    }
+
 }

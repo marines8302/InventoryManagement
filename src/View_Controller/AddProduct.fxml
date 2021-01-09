@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="628.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddProduct">
    <children>
       <TableView layoutX="428.0" layoutY="79.0" prefHeight="200.0" prefWidth="399.0">
@@ -27,13 +26,13 @@
             <TableColumn prefWidth="131.0" text="Price/Cost per Unit" />
         </columns>
       </TableView>
-      <TextField layoutX="666.0" layoutY="33.0" promptText="Search by Part ID or Name" />
-      <TextField layoutX="157.0" layoutY="98.0" />
-      <TextField layoutX="157.0" layoutY="152.0" />
-      <TextField layoutX="157.0" layoutY="204.0" prefHeight="27.0" prefWidth="89.0" />
-      <TextField layoutX="157.0" layoutY="252.0" prefHeight="27.0" prefWidth="89.0" />
-      <TextField layoutX="157.0" layoutY="301.0" prefHeight="27.0" prefWidth="89.0" />
-      <TextField layoutX="300.0" layoutY="301.0" prefHeight="27.0" prefWidth="89.0" />
+      <TextField fx:id="addProductSearchText" layoutX="666.0" layoutY="33.0" promptText="Search by Part ID or Name" />
+      <TextField fx:id="addProductIDText" layoutX="157.0" layoutY="98.0" />
+      <TextField fx:id="addProductNameText" layoutX="157.0" layoutY="152.0" />
+      <TextField fx:id="addProductInvText" layoutX="157.0" layoutY="204.0" prefHeight="27.0" prefWidth="89.0" />
+      <TextField fx:id="addProductPriceText" layoutX="157.0" layoutY="252.0" prefHeight="27.0" prefWidth="89.0" />
+      <TextField fx:id="addProductMaxText" layoutX="157.0" layoutY="301.0" prefHeight="27.0" prefWidth="89.0" />
+      <TextField fx:id="addProductMinText" layoutX="300.0" layoutY="301.0" prefHeight="27.0" prefWidth="89.0" />
       <Label layoutX="116.0" layoutY="38.0" text="Add Product">
          <font>
             <Font name="System Bold" size="24.0" />
@@ -45,9 +44,9 @@
       <Label layoutX="76.0" layoutY="257.0" text="Price" />
       <Label layoutX="76.0" layoutY="306.0" text="Max" />
       <Label layoutX="257.0" layoutY="306.0" text="Min" />
-      <Button layoutX="643.0" layoutY="528.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Remove Associated Part" />
-      <Button layoutX="746.0" layoutY="564.0" mnemonicParsing="false" text="Cancel" />
-      <Button layoutX="643.0" layoutY="564.0" mnemonicParsing="false" text="Save" />
-      <Button layoutX="749.0" layoutY="288.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="addProductRemovePartButton" layoutX="643.0" layoutY="528.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Remove Associated Part" />
+      <Button fx:id="addProductCancelButton" layoutX="746.0" layoutY="564.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="addProductSaveButton" layoutX="643.0" layoutY="564.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="addProductAddButton" layoutX="749.0" layoutY="288.0" mnemonicParsing="false" text="Add" />
    </children>
 </AnchorPane>

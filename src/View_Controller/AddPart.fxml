@@ -39,8 +39,8 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <RadioButton mnemonicParsing="false" text="In-House" GridPane.columnIndex="1" />
-                  <RadioButton mnemonicParsing="false" prefHeight="62.0" prefWidth="182.0" text="Outsourced" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="addPartInHouseRadioButton" mnemonicParsing="false" text="In-House" GridPane.columnIndex="1" />
+                  <RadioButton fx:id="addPartOutsourcedRadioButton" mnemonicParsing="false" prefHeight="62.0" prefWidth="182.0" text="Outsourced" GridPane.columnIndex="2" />
                   <Label alignment="CENTER" prefHeight="95.0" prefWidth="206.0" text="Min" GridPane.rowIndex="5" />
                   <Label alignment="CENTER" prefHeight="49.0" prefWidth="243.0" text="Max" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                   <Label alignment="CENTER" prefHeight="51.0" prefWidth="158.0" text="ID" GridPane.rowIndex="1" />
@@ -48,22 +48,22 @@
                   <Label alignment="CENTER" prefHeight="85.0" prefWidth="194.0" text="Inventory" GridPane.rowIndex="3" />
                   <Label alignment="CENTER" prefHeight="102.0" prefWidth="197.0" text="Price/Cost" GridPane.rowIndex="4" />
                   <Label alignment="CENTER" prefHeight="55.0" prefWidth="205.0" text="Company Name" GridPane.rowIndex="6" />
-                  <TextField prefHeight="77.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="addPartIDText" prefHeight="77.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField prefHeight="97.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <TextField fx:id="addPartNameText" prefHeight="97.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField prefHeight="106.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <TextField fx:id="addPartInventoryText" prefHeight="106.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField prefHeight="101.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <TextField fx:id="addPartPriceText" prefHeight="101.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
@@ -73,17 +73,17 @@
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField prefHeight="103.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                  <TextField fx:id="addPartMinText" prefHeight="103.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField prefHeight="94.0" prefWidth="269.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <TextField fx:id="addPartCompanyNameText" prefHeight="94.0" prefWidth="269.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField layoutX="160.0" layoutY="306.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                  <TextField fx:id="addPartMaxText" layoutX="160.0" layoutY="306.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </GridPane.margin>
@@ -92,8 +92,8 @@
             </GridPane>
             <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="600.0" spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" text="Save" />
-                  <Button mnemonicParsing="false" text="Cancel">
+                  <Button fx:id="addPartSaveButton" mnemonicParsing="false" text="Save" />
+                  <Button fx:id="addPartCancelButton" mnemonicParsing="false" text="Cancel">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
